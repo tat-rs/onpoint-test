@@ -1,0 +1,14 @@
+.page__content {
+  width: 1024px;
+  height: 768px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 24px 42px 12px 68px;
+  background-image: url(../../images/main-bg.png);
+  background-size: cover;
+}
+
+.page__main {
+  flex-grow: 1;
+}

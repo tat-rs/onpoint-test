@@ -1,0 +1,34 @@
+.main {
+
+}
+
+.main__text {
+  margin: 0 0 24px 0;
+  font-family: 'DINPro', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main__title {
+  max-width: 100%;
+  margin: 0;
+  font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 110px;
+  line-height: 114px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.main__title_bold {
+  font-weight: 800;
+}
+
+.main__button {
+
+}
