@@ -11,6 +11,10 @@
   margin: 0 24px 0 0;
 }
 
+.header__icon:hover {
+  cursor: pointer;
+}
+
 .header__line {
   display: block;
   height: 25px;

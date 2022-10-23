@@ -9,6 +9,10 @@
   border-radius: 50px;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .button__icon {
   position: relative;
   width: 50px;
@@ -31,7 +35,6 @@
   width: 60px;
   height: 60px;
   background: linear-gradient(to bottom right, #b04e78, #ffa1c2);
-  /* filter: blur(2px); */
   z-index: -1;                                 ;
 }
 
