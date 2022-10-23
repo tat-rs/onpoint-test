@@ -1,5 +1,10 @@
 .main {
+  flex-grow: 1;
+}
 
+.main__container {
+  position: relative;
+  z-index: 10;
 }
 
 .main__text {
@@ -30,5 +35,52 @@
 }
 
 .main__button {
+  position: absolute;
+  bottom: 12px;
+  right: 65px;
+}
 
+.sperm {
+  position: absolute;
+  top: 155px;
+  right: 0;
+  width: 590px;
+  height: 92px;
+  z-index: 15;
+}
+
+.shere-big-1 {
+  position: absolute;
+  top: 200px;
+  right: 52px;
+  width: 112px;
+  height: 114px;
+  z-index: 16;
+}
+
+.shere-big-2 {
+  position: absolute;
+  bottom: 0;
+  right: 252px;
+  width: 230px;
+  height: 126px;
+  z-index: 17;
+}
+
+.shere-small-1 {
+  position: absolute;
+  top: 62px;
+  right: 215px;
+  width: 63px;
+  height: 59px;
+  z-index: 18;
+}
+
+.shere-small-2 {
+  position: absolute;
+  bottom: 195px;
+  left: 23px;
+  width: 73px;
+  height: 69px;
+  z-index: 5;
 }
