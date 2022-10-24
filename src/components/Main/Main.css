@@ -1,5 +1,6 @@
 .main {
   flex-grow: 1;
+  padding: 114px 0 0;
 }
 
 .main__container {
