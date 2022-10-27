@@ -4,7 +4,7 @@
 }
 
 .info__title {
-  margin: 0 0 45px 0;
+  margin: 0 0 80px 0;
   font-family: 'DINPro', Arial, Helvetica, sans-serif;
   font-size: 27px;
   font-weight: 400;
@@ -13,63 +13,56 @@
 }
 
 .info__container {
-  display: flex;
-  align-items: flex-end;
-  box-sizing: border-box;
-  padding: 0 0 0 5px;
-}
-
-.scrollbar {
   position: relative;
-  height: 438px;
-  width: 22px;
-  margin: 0 26px 0 0;
+  width: 774px;
+  height: 390px;
+  z-index: 1000;
+  box-sizing: border-box;
+  padding: 0 0 0 90px;
+  overflow-y: auto;
+  direction: rtl;
 }
 
-.scrollbar__track {
-  width: 5px;
-  height: 100%;
-  background-color: #000;
-  margin: 0 auto;
-  border-radius: 5px;
+.info__container::-webkit-scrollbar {
+  width: 23px;
 }
 
-.scrollbar__thumb {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 102px;
+.info__container::-webkit-scrollbar-track {
+  background: rgb(0,0,0);
+  border: 9px solid transparent;
+  background-clip: content-box;
+  border-radius: 50px;
+}
+
+.info__container::-webkit-scrollbar-thumb {
   background: rgb(142,64,106);
   background: linear-gradient(90deg, rgba(142,64,106,1) 0%, rgba(236,57,137,1) 58%, rgba(234,181,205,1) 100%);
-  margin: 0 auto;
   border-radius: 50px;
 }
 
-.info__article {
-  width: 774px;
-  height: 448px;
-  box-sizing: border-box;
-  padding: 28px 30px;
+.info__bg {
+  position: fixed;
+  top: 31%;
+  bottom: 10%;
+  left: 11%;
+  right: 13%;
   background-color: #fff;
   border-radius: 50px;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .info__text {
+  position: relative;
   margin: 0;
   width: 100%;
-  height: 100%;
+  height: 400px;
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
   letter-spacing: 2px;
-  overflow-y: scroll;
-}
-
-.info__text::-webkit-scrollbar {
-  display: none;
+  direction: ltr;
+  z-index: 1010;
 }
 
 .info__text_bold {
@@ -82,6 +75,7 @@
   right: 0;
   width: 309px;
   height: 171px;
+  z-index: 1;
 }
 
 .sperm_2 {
@@ -90,6 +84,7 @@
   right: 0;
   width: 440px;
   height: 311px;
+  z-index: 2;
 }
 
 .sperm_3 {
@@ -98,6 +93,8 @@
   right: 0;
   width: 657px;
   height: 510px;
+  z-index: 1;
+  background-color: transparent;
 }
 
 .sperm_4 {
@@ -106,6 +103,7 @@
   right: 0;
   width: 140px;
   height: 370px;
+  z-index: 4;
 }
 
 .sperm_5 {
@@ -114,4 +112,5 @@
   right: 0;
   width: 136px;
   height: 150px;
+  z-index: 5;
 }
