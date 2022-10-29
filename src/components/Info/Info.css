@@ -71,46 +71,78 @@
 
 .sperm_1 {
   position: absolute;
-  top: 76px;
-  right: 0;
+  top: 152px;
+  right: -95px;
   width: 309px;
   height: 171px;
   z-index: 1;
+  opacity: 0;
+  animation: move-sperm1 2s ease-in-out 1.2s 1 normal forwards running;
 }
 
 .sperm_2 {
   position: absolute;
-  top: 100px;
-  right: 0;
+  top: 200px;
+  right: -95px;
   width: 440px;
   height: 311px;
   z-index: 2;
+  opacity: 0;
+  animation: move-sperm2 2s ease-in-out 1s 1 normal forwards running;
 }
 
 .sperm_3 {
   position: absolute;
-  top: 100px;
-  right: 0;
+  top: 200px;
+  right: -95px;
   width: 657px;
   height: 510px;
   z-index: 1;
   background-color: transparent;
+  opacity: 0;
+  animation: move-sperm2 2s ease-in-out 1s 1 normal forwards running;
 }
 
 .sperm_4 {
   position: absolute;
-  top: 409px;
-  right: 0;
+  top: 509px;
+  right: -95px;
   width: 140px;
   height: 370px;
   z-index: 4;
+  opacity: 0;
+  animation: move-sperm2 2s ease-in-out 1s 1 normal forwards running;
 }
 
 .sperm_5 {
   position: absolute;
-  top: 518px;
-  right: 0;
+  top: 618px;
+  right: -95px;
   width: 136px;
   height: 150px;
   z-index: 5;
+  opacity: 0;
+  animation: move-sperm2 2s ease-in-out 1.2s 1 normal forwards running;
+}
+
+@keyframes move-sperm1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-102px, -76px);
+    opacity: 1;
+  }
+}
+
+@keyframes move-sperm2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100px, -95px);
+    opacity: 1;
+  }
 }
