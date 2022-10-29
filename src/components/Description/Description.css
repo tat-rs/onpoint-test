@@ -121,6 +121,7 @@
   left: 200px;
   width: 40px;
   height: 40px;
+  animation: move-diagonal 2s linear 1s infinite alternate forwards running;
 }
 
 .bubble_2 {
@@ -130,6 +131,7 @@
   width: 68px;
   height: 62px;
   z-index: 205;
+  animation: move-diagonal 2s linear 0s infinite alternate forwards running;
 }
 
 .bubble_3 {
@@ -138,6 +140,7 @@
   left: 80px;
   width: 35px;
   height: 35px;
+  animation: move-horizontaly 2s linear 1s infinite alternate forwards running;
 }
 
 .bubble_4 {
@@ -146,6 +149,7 @@
   left: 186px;
   width: 115px;
   height: 115px;
+  animation: move-scale 2s linear 0s infinite alternate forwards running;
 }
 
 .bubble_5 {
@@ -154,15 +158,18 @@
   left: 10px;
   width: 35px;
   height: 35px;
+  z-index: 205;
+  animation: move-horizontaly 3s linear 0s infinite alternate forwards running;
 }
 
 .bubble_6 {
   position: absolute;
   bottom: 137px;
-  left: 25px;
+  left: 55px;
   width: 76px;
   height: 76px;
   z-index: 205;
+  animation: move-scale-horizontaly 2s linear 0s infinite alternate forwards running;
 }
 
 .bubble_7 {
@@ -171,6 +178,7 @@
   left: 245px;
   width: 56px;
   height: 60px;
+  animation: move-horizontaly 6s linear 1s infinite alternate forwards running;
 }
 
 .bubble_8 {
@@ -180,4 +188,45 @@
   width: 140px;
   height: 63px;
   z-index: 205;
+  animation: move-scale 2s linear 0s infinite alternate forwards running;
+}
+
+@keyframes move-diagonal {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(20px, 30px);
+  }
+}
+
+@keyframes move-horizontaly {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(30px, 0);
+  }
+}
+
+@keyframes move-scale {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes move-scale-horizontaly {
+  0% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+
+  100% {
+    transform: matrix(1.2, 0, 0, 1.2, -30, 0)
+  }
 }
