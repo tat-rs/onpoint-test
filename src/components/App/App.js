@@ -1,7 +1,8 @@
+import Description from "../Description/Description";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 /* import Main from "../Main/Main"; */
-import Info from "../Info/Info";
+/* import Info from "../Info/Info"; */
 import "./App.css";
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <div className="page__content">
       <Header />
       {/* <Main /> */}
-      <Info />
+      {/* <Info /> */}
+      <Description />
       <Footer />
     </div>
   );

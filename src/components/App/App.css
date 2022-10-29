@@ -7,7 +7,8 @@
   box-sizing: border-box;
   padding: 24px 42px 12px 66px;
   /* background-image: url(../../images/main-bg.png); */
-  background-image: url(../../images/bg-2.png);
+  /* background-image: url(../../images/bg-2.png); */
+  background-image: url(../../images/bg-3.png);
   background-size: cover;
   overflow: hidden;
 }
