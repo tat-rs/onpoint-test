@@ -21,9 +21,8 @@ function Description() {
     setIsOpenedPopup(!isOpenedPopup);
   }
   return (
-    <>
-      <section className="description">
-        {
+    <section className="description">
+      {
           isOpenedPopup ? (
             <Popup onClick={() => changePopup()} />
           ) : (
@@ -50,7 +49,6 @@ function Description() {
             </>
           )
         }
-      </section>
       <img src={Bottle} alt="bottle" className="bottle" />
       <img src={Bubble1} alt="bubble" className="bubble_1" />
       <img src={Bubble2} alt="bubble" className="bubble_2" />
@@ -60,7 +58,7 @@ function Description() {
       <img src={Bubble6} alt="bubble" className="bubble_6" />
       <img src={Bubble7} alt="bubble" className="bubble_7" />
       <img src={Bubble8} alt="bubble" className="bubble_8" />
-    </>
+    </section>
   );
 }
 

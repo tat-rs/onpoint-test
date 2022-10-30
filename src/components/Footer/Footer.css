@@ -1,4 +1,7 @@
 .footer {
+  position: absolute;
+  bottom: 12px;
+  left: 66px;
   z-index: 1000;
 }
 

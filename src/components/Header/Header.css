@@ -1,13 +1,20 @@
 .header {
+  position: absolute;
+  top: 24px;
+  left: 66px;
   display: flex;
   align-items: center;
+  z-index: 3000;
 }
 
 .header__icon {
   display: block;
+  border: none;
+  padding: 0;
   height: 21px;
   width: 22px;
   margin: 0 24px 0 0;
+  background-color: inherit;
 }
 
 .header__icon:hover {

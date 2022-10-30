@@ -7,7 +7,10 @@ import ShereSmall1 from "../../images/shere-small-1.png";
 import ShereSmall2 from "../../images/shere-small-2.png";
 import "./Main.css";
 
-function Main() {
+function Main({ offset, setOffset, PAGE_WIDTH }) {
+  function nextSlide() {
+    setOffset(offset - PAGE_WIDTH);
+  }
   return (
     <section className="main">
       <div className="main__container">
@@ -19,7 +22,7 @@ function Main() {
           <br />
           задание
         </h1>
-        <Button icon="arrowRight" text="Что дальше?" className="main__button" />
+        <Button icon="arrowRight" text="Что дальше?" className="main__button" onClick={() => nextSlide()} />
       </div>
       <img className="sperm" src={SpermImage} alt="sperm" />
       <img className="shere-big-1" src={ShereBig1} alt="shere big" />
