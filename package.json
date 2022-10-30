@@ -1,4 +1,5 @@
-{
+{ 
+  "homepage": "hhttps://tat-rs.github.io/onpoint-test",
   "name": "onpoint-test",
   "version": "0.1.0",
   "private": true,
