@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+import { useState } from "react";
 import Button from "../Button/Button";
 import "./Description.css";
 
@@ -11,29 +12,44 @@ import Bubble5 from "../../images/bubble-5.png";
 import Bubble6 from "../../images/bubble-6.png";
 import Bubble7 from "../../images/bubble-7.png";
 import Bubble8 from "../../images/bubble-8.png";
+import Popup from "../Popup/Popup";
 
 function Description() {
+  const [isOpenedPopup, setIsOpenedPopup] = useState(false);
+
+  function changePopup() {
+    setIsOpenedPopup(!isOpenedPopup);
+  }
   return (
     <>
       <section className="description">
-        <p className="description__subtitle">Ключевое сообщение</p>
-        <h2 className="description__title">
-          Brend
-          <span className="description__title_bold">xy</span>
-        </h2>
-        <div className="description__container">
-          <div className="description__card description__card_big">
-            <p className="description__text">Ehicula ipsim a&nbsp;arcu cursus vitae. Eu&nbsp;non diam phasellus vestibulum lorem sed risus ultiricies</p>
-          </div>
-          <div className="description__card description__card_small">
-            <p className="description__text">A&nbsp;arcu cursus vitae</p>
-          </div>
-          <Button
-            icon="plus"
-            className="description__button"
-            text="Подробнее"
-          />
-        </div>
+        {
+          isOpenedPopup ? (
+            <Popup onClick={() => changePopup()} />
+          ) : (
+            <>
+              <p className="description__subtitle">Ключевое сообщение</p>
+              <h2 className="description__title">
+                Brend
+                <span className="description__title_bold">xy</span>
+              </h2>
+              <div className="description__container">
+                <div className="description__card description__card_big">
+                  <p className="description__text">Ehicula ipsim a&nbsp;arcu cursus vitae. Eu&nbsp;non diam phasellus vestibulum lorem sed risus ultiricies</p>
+                </div>
+                <div className="description__card description__card_small">
+                  <p className="description__text">A&nbsp;arcu cursus vitae</p>
+                </div>
+                <Button
+                  icon="plus"
+                  className="description__button"
+                  text="Подробнее"
+                  onClick={() => changePopup()}
+                />
+              </div>
+            </>
+          )
+        }
       </section>
       <img src={Bottle} alt="bottle" className="bottle" />
       <img src={Bubble1} alt="bubble" className="bubble_1" />
