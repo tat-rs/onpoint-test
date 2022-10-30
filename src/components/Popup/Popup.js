@@ -1,18 +1,38 @@
 /* eslint-disable react/no-array-index-key */
 import { usePagination } from "../../hooks/usePagination";
+import Pagination from "../Pagination/Pagination";
 import "./Popup.css";
 
-const list = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  "Faucibus pulvinar elementum integer enim",
-  "Faucibus pulvinar elementum integer enim",
-  "Mi bibendum neque egestas congue quisque egestas diam",
-  "Venenatis lectus magna fringilla urna",
-  "Venenatis lectus magna fringilla urna",
+const list = [{
+  id: 1,
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+},
+{
+  id: 2,
+  text: "Faucibus pulvinar elementum integer enim",
+},
+{
+  id: 3,
+  text: "Faucibus pulvinar elementum integer enim",
+},
+{
+  id: 4,
+  text: "Mi bibendum neque egestas congue quisque egestas diam",
+},
+{
+  id: 5,
+  text: "Venenatis lectus magna fringilla urna",
+},
+{
+  id: 6,
+  text: "Venenatis lectus magna fringilla urna",
+},
 ];
 
 function Popup({ onClick }) {
-  const { firstContentIndex, lastContentIndex } = usePagination({
+  const {
+    page, firstContentIndex, lastContentIndex, totalPages, nextPage, prevPage, setPageSafe,
+  } = usePagination({
     contentPerPage: 3,
     count: list.length,
   });
@@ -35,16 +55,27 @@ function Popup({ onClick }) {
           {
           list
             .slice(firstContentIndex, lastContentIndex)
-            .map((text, i) => (
-              <li key={i} className="popup__item">
-                <span className="popup__number">{`0${i + 1}`}</span>
+            .map((el) => (
+              <li key={el.id} className="popup__item">
+                <span className="popup__number">{`0${el.id}`}</span>
                 <p className="popup__text">
-                  {text}
+                  {el.text}
                 </p>
               </li>
             ))
         }
         </ul>
+        {
+        totalPages > 1 && (
+          <Pagination
+            totalPages={totalPages}
+            page={page}
+            nextPage={nextPage}
+            prevPage={prevPage}
+            setPage={setPageSafe}
+          />
+        )
+      }
       </div>
     </div>
   );
