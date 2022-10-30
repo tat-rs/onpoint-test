@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/onpoint-test/static/css/main.2d157032.css",
+    "main.css": "/onpoint-test/static/css/main.873ca3a3.css",
     "main.js": "/onpoint-test/static/js/main.eecc6975.js",
     "static/media/bg-2.png": "/onpoint-test/static/media/bg-2.9010f0eea0eb55632889.png",
     "static/media/bg-3.png": "/onpoint-test/static/media/bg-3.56cbefc2c4a97575114d.png",
@@ -28,11 +28,11 @@
     "static/media/home.svg": "/onpoint-test/static/media/home.224910fec8d881d63a73000cc08bcdc2.svg",
     "static/media/arrow-right.svg": "/onpoint-test/static/media/arrow-right.9b42d21b5abfbec8a3f0edd872b318d8.svg",
     "static/media/plus.svg": "/onpoint-test/static/media/plus.a78bcf64f96b3760762b0e54f8bfba33.svg",
-    "main.2d157032.css.map": "/onpoint-test/static/css/main.2d157032.css.map",
+    "main.873ca3a3.css.map": "/onpoint-test/static/css/main.873ca3a3.css.map",
     "main.eecc6975.js.map": "/onpoint-test/static/js/main.eecc6975.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d157032.css",
+    "static/css/main.873ca3a3.css",
     "static/js/main.eecc6975.js"
   ]
 }
